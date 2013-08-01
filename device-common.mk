@@ -35,6 +35,10 @@ PRODUCT_COPY_FILES := \
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1200
+
 PRODUCT_PACKAGES := \
     android.hardware.wifi@1.0-service \
     libwpa_client \
