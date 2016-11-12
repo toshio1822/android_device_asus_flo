@@ -38,6 +38,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 # Boot animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1200
+TARGET_BOOTANIMATION_HALF_RES := true
 
 PRODUCT_PACKAGES := \
     android.hardware.wifi@1.0-service \
