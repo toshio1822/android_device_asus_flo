@@ -127,4 +127,17 @@ BOARD_HARDWARE_CLASS += \
 # Recovery
 TARGET_RECOVERY_DENSITY := hdpi
 
+#TWRP config:
+DEVICE_RESOLUTION := 1200x1920
+BOARD_HAS_NO_REAL_SDCARD := true
+RECOVERY_SDCARD_ON_DATA := true
+TW_INCLUDE_CRYPTO := true
+TW_CUSTOM_POWER_BUTTON := 107
+TW_BRIGHTNESS_PATH := /sys/devices/platform/msm_fb.591617/leds/lcd-backlight/brightness
+TW_MAX_BRIGHTNESS := 255
+TW_NO_SCREEN_BLANK := true
+TW_CUSTOM_BATTERY_PATH := /sys/devices/i2c-0/0-0055/power_supply/battery
+TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone0/temp
+TW_INCLUDE_MTP := true
+
 -include vendor/asus/flo/BoardConfigVendor.mk
