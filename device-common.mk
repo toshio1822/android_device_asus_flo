@@ -37,8 +37,21 @@ PRODUCT_COPY_FILES += \
     device/asus/flo/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     device/asus/flo/audio/audio_policy.conf:system/etc/audio_policy.conf \
     device/asus/flo/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/asus/flo/twrp.fstab:recovery/root/etc/twrp.fstab \
-    device/asus/flo/libQSEEComAPI.so:recovery/root/sbin/libQSEEComAPI.so
+    device/asus/flo/twrp.fstab:recovery/root/etc/twrp.fstab
+
+# TWRP lollipop decrypt proprietaries
+
+$(shell mkdir -p out/target/product/flo/recovery/root/vendor/firmware/keymaster)
+$(shell mkdir -p out/target/product/flo/recovery/root/vendor/lib/hw)
+
+PRODUCT_COPY_FILES += \
+    device/asus/flo/recovery/keymaster.b00:recovery/root/vendor/firmware/keymaster/keymaster.b00 \
+    device/asus/flo/recovery/keymaster.b01:recovery/root/vendor/firmware/keymaster/keymaster.b01 \
+    device/asus/flo/recovery/keymaster.b02:recovery/root/vendor/firmware/keymaster/keymaster.b02 \
+    device/asus/flo/recovery/keymaster.b03:recovery/root/vendor/firmware/keymaster/keymaster.b03 \
+    device/asus/flo/recovery/keymaster.mdt:recovery/root/vendor/firmware/keymaster/keymaster.mdt \
+    device/asus/flo/recovery/keystore.msm8960.so:recovery/root/vendor/lib/hw/keystore.msm8960.so \
+    device/asus/flo/recovery/libQSEEComAPI.so:recovery/root/sbin/libQSEEComAPI.so
 
 # Bluetooth
 PRODUCT_PACKAGES += \
