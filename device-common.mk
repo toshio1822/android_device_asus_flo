@@ -37,7 +37,8 @@ PRODUCT_COPY_FILES += \
     device/asus/flo/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     device/asus/flo/audio/audio_policy.conf:system/etc/audio_policy.conf \
     device/asus/flo/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/asus/flo/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/asus/flo/twrp.fstab:recovery/root/etc/twrp.fstab \
+    device/asus/flo/libQSEEComAPI.so:recovery/root/sbin/libQSEEComAPI.so
 
 # Bluetooth
 PRODUCT_PACKAGES += \
