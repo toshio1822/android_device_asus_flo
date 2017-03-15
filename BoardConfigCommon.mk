@@ -139,5 +139,6 @@ TW_NO_SCREEN_BLANK := true
 TW_CUSTOM_BATTERY_PATH := /sys/devices/i2c-0/0-0055/power_supply/battery
 TW_CUSTOM_CPU_TEMP_PATH := /sys/devices/virtual/thermal/thermal_zone0/temp
 TW_INCLUDE_MTP := true
+TW_INCLUDE_NTFS_3G := true
 
 -include vendor/asus/flo/BoardConfigVendor.mk
