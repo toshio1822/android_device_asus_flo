@@ -39,6 +39,10 @@ PRODUCT_COPY_FILES += \
     device/asus/flo/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/asus/flo/twrp.fstab:recovery/root/etc/twrp.fstab
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+	persist.sys.usb.config=mtp,adb \
+	ro.adb.secure=0
+
 # TWRP lollipop decrypt proprietaries
 
 $(shell mkdir -p out/target/product/flo/recovery/root/vendor/firmware/keymaster)
