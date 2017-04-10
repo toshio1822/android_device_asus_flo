@@ -307,6 +307,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false
 
+# Configure ro.recents.grid
+PRODUCT_PROPERTY_OVERRIDES += \
+        ro.recents.grid=true
+
 PRODUCT_PACKAGES += \
     power.flo
 
