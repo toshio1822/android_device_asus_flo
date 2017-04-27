@@ -13,6 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-$(call inherit-product, device/asus/flo/aosp_flo.mk)
+$(call inherit-product, device/asus/flo/razor.mk)
 
 PRODUCT_NAME := full_flo
