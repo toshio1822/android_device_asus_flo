@@ -21,7 +21,7 @@
 # Inherit from the common Open Source product configuration
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-PRODUCT_NAME := aosp_flo
+PRODUCT_NAME := razor
 PRODUCT_DEVICE := flo
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Nexus 7
