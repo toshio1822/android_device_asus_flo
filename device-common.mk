@@ -309,7 +309,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Configure ro.recents.grid
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.recents.grid=flase
+    ro.recents.grid=false
 
 PRODUCT_PACKAGES += \
     power.flo
