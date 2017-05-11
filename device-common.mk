@@ -77,10 +77,6 @@ PRODUCT_PACKAGES += \
     charger_res_images \
     charger_touch
 
-# Gello
-PRODUCT_PACKAGES += \
-    Gello
-
 # Graphics
 PRODUCT_PACKAGES += \
     libgenlock \
