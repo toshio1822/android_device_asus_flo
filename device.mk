@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES := \
     device/asus/flo/init.flo.rc:root/init.flo.rc
 
 PRODUCT_PACKAGES += \
-    camera.flo
+    camera.msm8960
 
 # NFC
 PRODUCT_PACKAGES += \
