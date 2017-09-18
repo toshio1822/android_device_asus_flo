@@ -169,10 +169,6 @@ PRODUCT_PACKAGES += \
 	ks \
 	efsks
 
-# stlport
-PRODUCT_PACKAGES += \
-	libstlport
-
 #Enable MDP composition by default
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.hwc.mdpcomp.enable=true
