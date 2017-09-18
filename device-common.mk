@@ -287,6 +287,11 @@ PRODUCT_PACKAGES += \
 	conn_init \
 	charger_touch
 
+# Bluetooth HAL
+PRODUCT_PACKAGES += \
+    libbt-vendor \
+    android.hardware.bluetooth@1.0-impl
+
 PRODUCT_PACKAGES += \
 	wpa_supplicant_overlay.conf \
 	p2p_supplicant_overlay.conf
