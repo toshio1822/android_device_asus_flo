@@ -1,5 +1,5 @@
 # Network utilities (radio process)
-type netmgrd, domain, domain_deprecated;
+type netmgrd, domain, device_domain_deprecated;
 type netmgrd_exec, exec_type, file_type;
 
 # Started by init
@@ -12,9 +12,9 @@ allow netmgrd self:capability { setuid setgid net_admin net_raw };
 dontaudit netmgrd self:capability sys_module;
 
 allow netmgrd self:udp_socket { create ioctl };
-allow netmgrd self:netlink_socket create_socket_perms;
-allow netmgrd self:netlink_route_socket { create_socket_perms nlmsg_read nlmsg_write };
-allow netmgrd self:packet_socket create_socket_perms;
+allow netmgrd self:netlink_socket create_socket_perms_no_ioctl;
+allow netmgrd self:netlink_route_socket { create_socket_perms_no_ioctl nlmsg_read nlmsg_write };
+allow netmgrd self:packet_socket create_socket_perms_no_ioctl;
 allow netmgrd self:rawip_socket create_socket_perms;
 
 # Talk to qmuxd (qmux_radio)

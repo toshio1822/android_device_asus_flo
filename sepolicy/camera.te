@@ -1,5 +1,5 @@
 # Qualcomm MSM camera
-type camera, domain, domain_deprecated;
+type camera, domain, device_domain_deprecated;
 type camera_exec, exec_type, file_type;
 
 # Started by init
@@ -28,7 +28,7 @@ allow camera sensors_socket:sock_file read;
 allow camera persist_file:dir search;
 r_dir_file(camera, persist_camera_file)
 
-allow camera system_file:file execmod;
+#allow camera system_file:file execmod;
 allow camera cameraserver:fd { use };
 
 # Interact with ion
