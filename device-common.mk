@@ -53,6 +53,7 @@ PRODUCT_PACKAGES := \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
+	android.hardware.light@2.0-impl \
 	lights.msm8960
 
 PRODUCT_PACKAGES += \
@@ -99,6 +100,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/asus/flo/thermald-flo.conf:system/etc/thermald.conf
 
+# Sensors
+PRODUCT_PACKAGES += \
+	android.hardware.sensors@1.0-impl
+
 PRODUCT_COPY_FILES += \
 	device/asus/flo/init.flo.usb.rc:root/init.flo.usb.rc \
 	device/asus/flo/ueventd.flo.rc:root/ueventd.flo.rc \
@@ -121,6 +126,10 @@ PRODUCT_COPY_FILES += \
 	device/asus/flo/hs_detect.kcm:system/usr/keychars/hs_detect.kcm \
 	device/asus/flo/keypad_8064.kcm:system/usr/keychars/keypad_8064.kcm \
 	device/asus/flo/pmic8xxx_pwrkey.kcm:system/usr/keychars/pmic8xxx_pwrkey.kcm
+
+# Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.keymaster@3.0-impl
 
 # Prebuilt input device calibration files
 PRODUCT_COPY_FILES += \
@@ -195,6 +204,9 @@ PRODUCT_PACKAGES += \
 	setup_fs
 
 PRODUCT_PACKAGES += \
+	android.hardware.graphics.allocator@2.0-impl \
+	android.hardware.graphics.composer@2.1-impl \
+	android.hardware.graphics.mapper@2.0-impl \
 	libgenlock \
 	liboverlay \
 	hwcomposer.msm8960 \
@@ -204,6 +216,8 @@ PRODUCT_PACKAGES += \
 	memtrack.msm8960
 
 PRODUCT_PACKAGES += \
+	android.hardware.audio@2.0-impl \
+	android.hardware.audio.effect@2.0-impl \
 	alsa.msm8960 \
 	audio.primary.msm8960 \
 	audio.a2dp.default \
@@ -313,10 +327,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.recents.grid=false
 
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl \
     power.flo
 
 # NFC packages
 PRODUCT_PACKAGES += \
+    android.hardware.power@1.0-impl \
     libnfc-nci \
     libnfc_nci_jni \
     NfcNci \
