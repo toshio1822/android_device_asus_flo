@@ -139,6 +139,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/asus/flo/elan-touchscreen.idc:system/usr/idc/elan-touchscreen.idc
 
+# USB HAL
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.0-service
+
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
@@ -210,6 +214,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.graphics.allocator@2.0-impl \
 	android.hardware.graphics.composer@2.1-impl \
 	android.hardware.graphics.mapper@2.0-impl \
+	android.hardware.memtrack@1.0-impl \
 	libgenlock \
 	liboverlay \
 	hwcomposer.msm8960 \
@@ -283,6 +288,10 @@ PRODUCT_PACKAGES += \
         gps.conf \
         gps.msm8960 \
         flp.msm8960
+
+# GNSS HAL
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@1.0-impl
 
 PRODUCT_PACKAGES += \
 	bdAddrLoader \
