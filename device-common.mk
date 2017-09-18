@@ -172,6 +172,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=320
 
+PRODUCT_PROPERTY_OVERRIDES += \
+       debug.hwui.use_buffer_age=false
+
 # Audio Configuration
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.audio.handset.mic=dmic \
