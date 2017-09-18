@@ -263,6 +263,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qualcomm.bt.hci_transport=smd
+	qcom.bluetooth.soc=smd
 
 PRODUCT_PACKAGES += \
 	libmmcamera_interface2 \
