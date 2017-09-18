@@ -20,7 +20,7 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_VARIANT := krait
 
-TARGET_NO_BOOTLOADER := false
+TARGET_NO_BOOTLOADER := true
 
 DEVICE_MANIFEST_FILE := device/asus/flo/manifest.xml
 
