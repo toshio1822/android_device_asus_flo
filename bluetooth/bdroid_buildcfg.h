@@ -19,9 +19,6 @@
 
 #define BTM_DEF_LOCAL_NAME   "Nexus 7"
 
-/* Defined if the kernel does not have support for CLOCK_BOOTTIME_ALARM */
-#define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
-
 #define SC_MODE_INCLUDED FALSE
 
 // Networking, Capturing, Object Transfer
@@ -36,6 +33,4 @@
 #define BTA_HOST_INTERLEAVE_SEARCH TRUE
 #define BTA_SKIP_BLE_READ_REMOTE_FEAT TRUE
 
-/* Defined if the kernel does not have support for CLOCK_BOOTTIME_ALARM */
-#define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
 #endif
