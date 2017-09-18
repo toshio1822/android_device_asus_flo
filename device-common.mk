@@ -104,9 +104,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/asus/flo/thermald-flo.conf:system/etc/thermald.conf
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/sensors/_hals.conf:system/vendor/etc/sensors/_hals.conf
+
 # Sensors
 PRODUCT_PACKAGES += \
-	android.hardware.sensors@1.0-impl
+	android.hardware.sensors@1.0-impl \
+	sensors.msm8960
 
 PRODUCT_COPY_FILES += \
 	device/asus/flo/init.flo.usb.rc:root/init.flo.usb.rc \
