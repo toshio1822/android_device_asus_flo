@@ -42,10 +42,6 @@ TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1200
 TARGET_BOOTANIMATION_HALF_RES := true
 
-PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
-    camera.device@3.2-impl \
-
 PRODUCT_PACKAGES := \
     android.hardware.wifi@1.0-service \
     libwpa_client \
@@ -55,6 +51,10 @@ PRODUCT_PACKAGES := \
     dhcpcd.conf \
     wpa_supplicant \
     wpa_supplicant.conf
+
+PRODUCT_PACKAGES += \
+	android.hardware.camera.provider@2.4-impl \
+	camera.device@3.2-impl
 
 PRODUCT_PACKAGES += \
 	android.hardware.light@2.0-impl \
@@ -262,7 +262,7 @@ PRODUCT_COPY_FILES += \
 	device/asus/flo/init.flo.bt.sh:system/bin/init.flo.bt.sh
 
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.qualcomm.bt.hci_transport=smd
+	ro.qualcomm.bt.hci_transport=smd \
 	qcom.bluetooth.soc=smd
 
 PRODUCT_PACKAGES += \
@@ -362,7 +362,7 @@ PRODUCT_PACKAGES += \
 
 # NFC packages
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.0-impl \
+    android.hardware.nfc@1.0-impl \
     libnfc-nci \
     libnfc_nci_jni \
     NfcNci \
