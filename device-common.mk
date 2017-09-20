@@ -363,6 +363,7 @@ PRODUCT_PACKAGES += \
 # NFC packages
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.0-impl \
+    android.hardware.nfc@1.0-service \
     libnfc-nci \
     libnfc_nci_jni \
     NfcNci \
