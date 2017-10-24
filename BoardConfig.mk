@@ -18,6 +18,8 @@ TARGET_BOOTLOADER_BOARD_NAME := flo
 TARGET_BOOTLOADER_NAME := flo
 TARGET_BOARD_INFO_FILE := device/asus/flo/board-info.txt
 
+DEVICE_MANIFEST_FILE := device/asus/flo/manifest.xml
+
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.flo
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/flo
