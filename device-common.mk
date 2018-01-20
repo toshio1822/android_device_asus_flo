@@ -110,9 +110,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@1.0-impl
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/sensors/_hals.conf:system/vendor/etc/sensors/_hals.conf
-
 # Sensors
 PRODUCT_PACKAGES += \
 	android.hardware.sensors@1.0-impl \
