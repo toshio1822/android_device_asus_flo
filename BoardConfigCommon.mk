@@ -124,7 +124,7 @@ USE_DEVICE_SPECIFIC_CAMERA:= true
 
 HAVE_ADRENO_SOURCE:= false
 
-BOARD_SEPOLICY_DIRS += device/asus/flo/sepolicy
+#BOARD_SEPOLICY_DIRS += device/asus/flo/sepolicy
 
 # Media HAL
 BOARD_GLOBAL_CFLAGS += -DQCOM_BSP_LEGACY
