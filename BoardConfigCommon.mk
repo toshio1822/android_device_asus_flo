@@ -133,8 +133,8 @@ BOARD_GLOBAL_CPPFLAGS += -DQCOM_BSP_LEGACY
 # Enable Minikin text layout engine (will be the default soon)
 USE_MINIKIN := true
 
-# Include an expanded selection of fonts
-EXTENDED_FONT_FOOTPRINT := true
+# Fonts
+SMALLER_FONT_FOOTPRINT := true
 
 #TWRP config:
 DEVICE_RESOLUTION := 1200x1920
