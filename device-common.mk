@@ -128,6 +128,9 @@ PRODUCT_COPY_FILES += \
 	device/asus/flo/media_codecs_performance.xml:system/etc/media_codecs_performance.xml
 
 PRODUCT_COPY_FILES += \
+	device/asus/flo/external_camera_config.xml:system/vendor/etc/external_camera_config.xml
+
+PRODUCT_COPY_FILES += \
 	device/asus/flo/kickstart_checker.sh:system/bin/kickstart_checker.sh
 
 # Prebuilt kl and kcm keymaps
