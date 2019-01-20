@@ -18,6 +18,8 @@ TARGET_BOOTLOADER_BOARD_NAME := flo
 TARGET_BOOTLOADER_NAME := flo
 TARGET_BOARD_INFO_FILE := device/asus/flo/board-info.txt
 
+DEVICE_MANIFEST_FILE := device/asus/flo/manifest.xml
+
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/flo
 
 TARGET_RECOVERY_FSTAB = device/asus/flo/rootdir/etc/fstab.flo

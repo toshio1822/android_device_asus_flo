@@ -145,7 +145,6 @@ SMALLER_FONT_FOOTPRINT := true
 TARGET_RECOVERY_DENSITY := hdpi
 
 # Device manifest
-DEVICE_MANIFEST_FILE := device/asus/flo/manifest.xml
 DEVICE_MATRIX_FILE := device/asus/flo/compatibility_matrix.xml
 
 -include vendor/asus/flo/BoardConfigVendor.mk
