@@ -284,8 +284,6 @@ PRODUCT_PACKAGES += \
 	libqomx_core
 
 PRODUCT_PACKAGES += \
-	mm-vdec-omx-test \
-	mm-venc-omx-test720p \
 	libdivxdrmdecrypt \
 	libOmxVdec \
 	libOmxVenc \
@@ -395,4 +393,4 @@ PRODUCT_COPY_FILES += \
     device/asus/flo/nfc/libnfc-brcm-20791b05.conf:system/vendor/etc/libnfc-brcm-20791b05.conf
 
 $(call inherit-product, frameworks/native/build/tablet-7in-xhdpi-2048-dalvik-heap.mk)
-$(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
+#$(call inherit-product, hardware/qcom/msm8960/msm8960.mk)
