@@ -29,5 +29,3 @@ DEVICE_PACKAGE_OVERLAYS += \
     device/asus/flo/overlay \
     device/asus/flo/overlay-lineage
 
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
