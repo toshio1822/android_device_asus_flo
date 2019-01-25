@@ -17,3 +17,7 @@ persist.audio.fluence.voicecall=true
 persist.audio.fluence.voicerec=false
 persist.audio.fluence.speaker=true
 qcom.hw.aac.encoder=true
+
+# Qualcomm BT aptXHD
+persist.bt.enableAptX=true
+persist.bt.enableAptXHD=true
