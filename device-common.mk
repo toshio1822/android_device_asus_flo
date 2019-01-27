@@ -55,6 +55,9 @@ PRODUCT_PACKAGES := \
     wpa_supplicant.conf
 
 PRODUCT_PACKAGES += \
+    Chrome
+
+PRODUCT_PACKAGES += \
 	android.hardware.camera.provider@2.4-impl \
 	camera.device@3.2-impl
 
