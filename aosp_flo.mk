@@ -17,8 +17,17 @@
 # Sample: This is where we'd set a backup provider if we had one
 # $(call inherit-product, device/sample/products/backup_overlay.mk)
 
-# PixelExperience stuff.
+# AEX stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Set this flag in build script
+ifeq ($(CURRENT_BUILD_TYPE), gapps)
+# GAPPS
+WITH_GAPPS := true
+TARGET_GAPPS_ARCH := arm
+TARGET_MINIMAL_APPS := true
+TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
+endif
 
 # Inherit some common AEX stuff.
 $(call inherit-product, vendor/aosp/config/common.mk)
