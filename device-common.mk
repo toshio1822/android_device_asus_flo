@@ -165,6 +165,9 @@ PRODUCT_COPY_FILES += \
     device/asus/flo/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     device/asus/flo/configs/nfc/libnfc-nci-20791b05.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci-20791b05.conf
 
+PRODUCT_COPY_FILES += \
+    device/asus/flo/configs/nfc/android.software.nfc.beam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.software.nfc.beam.xml
+
 # OMX
 PRODUCT_PACKAGES += \
     libOmxVdec \
