@@ -59,6 +59,3 @@ debug.hwui.use_buffer_age=false
 
 # Display
 persist.hwc.mdpcomp.enable=true
-
-# Disable RescueParty (TEMP)
-persist.sys.disable_rescue=true
