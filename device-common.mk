@@ -129,8 +129,8 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl
 
 # Keystore
-PRODUCT_PACKAGES += \
-    keystore.msm8960
+#PRODUCT_PACKAGES += \
+#    keystore.msm8960
 
 # Kickstart
 PRODUCT_COPY_FILES += \
