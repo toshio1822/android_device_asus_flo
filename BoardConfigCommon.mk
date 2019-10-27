@@ -134,6 +134,8 @@ USE_DEVICE_SPECIFIC_CAMERA:= true
 
 HAVE_ADRENO_SOURCE:= false
 
+SELINUX_IGNORE_NEVERALLOWS := true
+
 BOARD_SEPOLICY_DIRS += device/asus/flo/sepolicy
 
 # Security Patch Level
